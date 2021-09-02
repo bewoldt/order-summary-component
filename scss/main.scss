@@ -6,14 +6,7 @@
   --desaturated-blue: hsl(218, 23%, 47%);
   --dark-blue: hsl(223, 47%, 23%);
   --purple: hsl(245, 80%, 65%);
-
-  /* Fonts */
-  --font-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
-    "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  --font-family-sans: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT",
-    "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
-    Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-} /* end :root */
+}
 *,
 *::before,
 *::after {
@@ -33,7 +26,7 @@ body {
   background-position: top center;
   background-repeat: repeat-x;
   line-height: 1.5;
-  font-family: var(--font-family-sans);
+  font-family: "Red Hat Display", sans-serif;
   display: grid;
   place-items: center;
 }
@@ -56,13 +49,13 @@ body {
   }
   &__title {
     color: var(--dark-blue);
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.75em 0;
     line-height: 1.1;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-weight: 900;
   }
   &__content {
     color: var(--desaturated-blue);
-    font-size: 1.125rem;
     margin: 0;
   }
 }
@@ -94,12 +87,14 @@ body {
   }
   & strong {
     color: var(--dark-blue);
+    font-weight: 900;
   }
   & span {
     color: var(--desaturated-blue);
   }
   & a {
     color: var(--bright-blue);
+    font-size: 0.9rem;
     font-weight: bold;
     &:hover,
     &:focus {
@@ -109,12 +104,6 @@ body {
   }
   @media (min-width: 400px) {
     padding: 1.4rem;
-    &__price {
-      font-size: 1.15rem;
-    }
-    & p {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -152,7 +141,7 @@ body {
 
 /* Attribution */
 .attribution {
-  font-size: 11px;
+  font-size: 0.685rem;
   text-align: center;
 }
 .attribution a {
