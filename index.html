@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Order Summary Site using HTML and custom CSS" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="dist/css/normalize.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body>
+    <header aria-label="skip-link">
+      <a href="#main-content" class="skiplink" aria-label="skip to main content"
+        >Skip to main content</a
+      >
+    </header>
+    <main id="main-content">
+      <div class="summary">
+        <div class="summary__header">
+          <img
+            src="images/illustration-hero.svg"
+            alt="illustration of woman dancing with headphones on"
+            class="summary__img"
+          />
+        </div>
+        <div class="summary__body">
+          <h1 class="summary__title text-center">Order Summary</h1>
+          <p class="summary__content text-center">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+            you like!
+          </p>
+          <div class="plan">
+            <!-- <img src="images/icon-music.svg" alt="music icon" /> -->
+            <p class="plan__price">
+              <strong>Annual Plan</strong><br />
+              <span>$59.99/year</span>
+            </p>
+            <a href="#">Change</a>
+          </div>
+          <button class="btn">Proceed to Payment</button>
+          <a href="#" class="cancel">Cancel Order</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/bewoldt" rel="noopener">bewoldt</a>.
+    </footer>
+  </body>
+</html>
